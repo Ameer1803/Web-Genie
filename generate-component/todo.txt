@@ -1,0 +1,5 @@
+make agent, currently horrible
+
+area to edit the code passed yourself
+
+make web genie template page even better
