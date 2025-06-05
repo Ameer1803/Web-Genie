@@ -1,0 +1,182 @@
+*{
+margin: 0;
+padding: 0;
+ font-family: 'Segoe UI', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+.header{
+   width: 100%;
+   background-color: #FA8072;
+   min-height: 100vh;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.png);
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}	
+.text-box{ 
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   font-size: 33px;
+}
+.text-box label,
+.text-box select {
+  font-size: 16px;
+  margin-top: 30px;
+}
+.hero-btn{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 2px solid #fff;
+   padding: 12px 34px;
+   font-size: 15px;
+   background: transparent; 
+     position: relative;
+     cursor: pointer;
+   margin-top: 30px;
+}
+.hero-btn:hover{
+border: 2px solid #fff;
+background: #fff;
+transition: 1s;
+color: #000000;
+}
+.row{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 20px;
+   margin-top: 30px;
+}
+.movies{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding-top: 50px;
+}
+.movies h2{
+ font-size: 35px;
+}
+.movies p{
+ margin-top: 20px;
+ color: #777;
+}
+.movie-col{
+   flex: 1 1 calc(20% - 16px);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.movie-col img{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.layer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.layer:hover{
+  background: rgba(0, 0, 0, 0.7)
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+ bottom: 45%;
+ opacity: 1;
+}
+select {
+  padding: 3px 7px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.interstellar{
+width: 100%;
+margin: auto;
+padding: 0px 0;
+}
+
+.interstellar-col {
+flex: 1 1 40%;
+  padding: 0px;
+  box-sizing: border-box;
+padding-left: 130px;
+}
+
+.interstellar-col img{
+ width: 88%;
+ border-radius: 5px;
+ padding: 0;
+}
+.movierow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.interstellar-content {
+  flex: 1 1 55%;
+  padding: 10px;
+}
+
+.interstellar-content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.interstellar-content p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+.hero-btn2{
+   display: inline-block;
+   text-decoration: none;
+   color: #000000;
+   border: 2px solid #000000;
+   padding: 12px 34px;
+   font-size: 15px;
+   background: transparent; 
+     position: relative;
+     cursor: pointer;
+   margin-top: 30px;
+}
+.hero-btn2:hover{
+border: 2px solid #000000;
+background: #000000;
+transition: 1s;
+color: #fff;
+}
+
+
