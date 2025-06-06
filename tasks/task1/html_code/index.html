@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag description for SEO -->
+    <meta name="description" content="Book your train tickets online with ease. Find and book train tickets for your journey with our user-friendly platform.">
+    <meta name="keywords" content="train ticket booking, book train tickets, online train booking, IRCTC, train tickets, railway tickets">
+    <!-- Favicon for accha icon on title -->
+     <link rel="shortcut icon" href="/img/train-favicon.png" type="image/png">
+    <title>Train Ticket Booking, Book train Ticket Online</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- For the Logo image on the left side -->
+            <img src="/img/logo.png" alt="">
+        </div>
+        <!-- For specifying seperate options like log in, sign in etc... on right side -->
+        <!-- For that we use unordered list and list items -->
+        <nav>
+            <ul>
+                <!-- These are modal overlay to create a dialogue box to open -->
+                <li><a href="#" class="login-text" onclick="openLoginModal()">Login</a></li>
+                <li><a href="#" class="signup-text" onclick="opensignupModal()">Sign Up</a></li>
+                <li ><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target  = "_blank">Help</a></li>
+            </ul>
+        </nav>
+
+        <!-- Login Modal Overlay -->
+        <div class="modal-overlay" id="loginModal" onclick="closeModal(event)">
+            <div class="dialog-box" onclick="event.stopPropagation()">
+                <!-- Cross button -->
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+
+                <h1>Login</h1>
+
+                <form action="/submit.php" method="POST">
+                    <h2>Log in using Mobile Number</h2>
+                    <div class="input-group">
+                        <!-- Since each id in html is unique, add different ph id to login and sign in -->
+                        <input id="loginPhone" name="phone" type="tel" placeholder="Enter your mobile number" required>
+                        <button type="submit" class="submit-btn">Generate OTP</button>
+                    </div>
+
+                    <h3>or</h3>
+
+                    <button type="button" class="google-signup" id="google-signup" title="signupbutton">Sign up with google</button>
+                    
+                </form>
+            </div>
+        </div>
+        <!-- Sign in Modal Overlay -->
+        <div class="modal-overlay" id="signupModal" onclick="closeModal(event)">
+            <div class="dialog-box" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+
+                <h1>Sign Up</h1>
+                <!-- Submit.php is a backend file which i have no idea :( -->
+                <form action="/submit.php" method="POST">
+                    <h2>Sign up using Mobile Number</h2>
+                    <div class="input-group">
+                        <input id="signupPhone" name="phone" type="tel" placeholder="Enter your mobile number" required>
+                        <button type="submit" class="submit-btn">Generate OTP</button>
+                    </div>
+
+                    <h3>or</h3>
+
+                    <div class="input-group">
+                        <input id="email" name="email" type="email" placeholder="Enter your email address">
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <!-- The terms and condition are blank, will loop back to same website. -->
+                        <label for="terms">By signing up, you agree to the <a href="#" target="_blank">Terms & Conditions</a></label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Generate OTP</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <!-- Use img/bgimg.png as background and make it a bit shorter in terms of height-->
+            <img src="/img/bgimg.png" alt="">
+            <h1>Train Ticket Booking</h1>
+            <h2>IRCTC Authorized e-ticketing</h2>
+        </section>
+
+        <section>
+            <!-- This form element is required for form submission.-->
+            <form id="trainSearchForm">
+                <div class="input-group">
+                    <!-- A seperate input group for From box-->
+                    <label for="fromCity">From</label>
+                    <select id="fromCity">
+                        <!-- Lets you choose to different options -->
+                        <option value="kanpur">Kanpur</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Nagpur">Nagpur</option>
+                    </select>
+                    <!-- This is a button to swap between destination and depature -->
+                    <button type="button" class="swap-btn" id="swapBtn" title="Swap cities">⇄</button>
+                </div>
+
+                <div class="input-group">
+                    <!-- A seperate input group for To box-->
+                    <label for="toCity">To</label>
+                    <select id="toCity">
+                        <option value="kanpur">Kanpur</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Nagpur">Nagpur</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <!-- A seperate input group for Date box-->
+                    <label for="traveldate">Travel Date</label>
+                    <input type="date" id="traveldate" class="traveldate" required>
+                </div>
+
+                <div class="input-group">
+                    <!-- This lets you select different classes -->
+                    <label for="trainClass">Class</label>
+                    <select id="trainClass" class="dropdown-select">
+                        <option value="">Select Class</option>
+                        <option value="1A">First AC (1A)</option>
+                        <option value="VA">Vistadome AC</option>
+                        <option value="2A">Second AC (2A)</option>
+                        <option value="3A">Third AC (3A)</option>
+                        <option value="SL">Sleeper Class (SL)</option>
+                        <option value="CC">AC Chair Car (CC)</option>
+                        <option value="2S">Second Sitting (2S)</option>
+                        <option value="EC">Executive Class (EC)</option>
+                    </select>
+                </div>
+
+                <!-- This is the Submit button -->
+                <button type="submit" class="search-btn">Search Trains</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        Ⓒ 2025 hamari train Pvt Ltd. | All rights reserved
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
