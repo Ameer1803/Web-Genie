@@ -10,7 +10,7 @@ _Conduction:_ There will be two modules running parallelly, AI and WebDev, note 
 
 | **AI** | **WebDev** |
 |-------------------------------|--------------------|
-| **1. Git**<br>i. [Simple Git Guide](https://rogerdudler.github.io/git-guide/)<br>ii. [First Contributions](https://github.com/firstcontributions/first-contributions) | **1. Web Basics** <br>[A glimpse into how the web works](https://www.youtube.com/watch?v=hJHvdBlSxug)|
+| **1. Git**<br>i. [Simple Git Guide](https://rogerdudler.github.io/git-guide/)<br>ii. [First Contributions](https://git hub.com/firstcontributions/first-contributions) | **1. Web Basics** <br>[A glimpse into how the web works](https://www.youtube.com/watch?v=hJHvdBlSxug)|
 | **2. Transformer & LLM Foundations**<br>[A Rather Deep Dive into Deep Learning](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) | **2. DNS** <br>[DNS post series](https://howdns.works)|
 | **3. All you need for neural networks**<br>[Neural Network from Scratch](https://www.youtube.com/watch?v=w8yWXqWQYmU) | **3. Web Architecture** <br> [All of this happens behind just one click!](https://www.youtube.com/watch?v=xv0Be4QfkH0) |
 
