@@ -1,3 +1,9 @@
+## Handwritten Notes
+
+Topics include System Design, Javascript, Flask, RAG, Transformer & LLMs, etc.<br>
+[Notes I put in a lot of effort to write](https://iitk-my.sharepoint.com/:o:/g/personal/ameerzaman23_iitk_ac_in/EtpHLfKTEsZFsy-AA1C9VvoBfxi5dEdhx4jlq49n8WmszA?rtime=SWrESRSv3Ug)
+
+
 ## Week 1 Resources
 
 | **AI** | **WebDev** |
@@ -50,6 +56,9 @@
 
 ### WEB
 
+0. Download WSL to use linux OS, personally recommend especially for web development projects 
+- [WSL Download](https://www.youtube.com/watch?v=eId6K8d0v6o)
+- [Node.js Download](https://www.youtube.com/watch?v=eId6K8d0v6o)
 1. Introduction to React, its history and why it was a breakthrough - [Story of React](https://youtu.be/Wm_xI7KntDs?si=Vgza9eGK7yDRE5zp)
 2. Components in React and modular approach - [Fireship](https://youtu.be/Tn6-PIqc4UM?si=xtTF_sehKyBlZUQ_)
 
